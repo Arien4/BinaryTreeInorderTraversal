@@ -22,9 +22,9 @@ public class Main {
 
     public static void main(String[] args) {
         Integer[] array = {1, null, 2, 3};
-        TreeNode root = new TreeNode().arrayToTreeNode(array);
+        TreeNode root = TreeNode.arrayToTreeNode(array);
         new BinaryTreePrinter(root).print(System.out);
         System.out.println();
-        //System.out.println(new Solution().inorderTraversal(root));
+        System.out.println(new Solution().inorderTraversal(root));
     }
 }
